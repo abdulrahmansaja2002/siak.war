@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,7 @@ function Home() {
           <code className="font-mono font-bold">pages/index.js</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
+          <Link
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -29,7 +30,7 @@ function Home() {
               height={24}
               priority
             />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -45,7 +46,7 @@ function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
+        <Link
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
@@ -60,9 +61,9 @@ function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Find in-depth information about Next.js features and API.
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
@@ -77,9 +78,9 @@ function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
@@ -94,9 +95,9 @@ function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Discover and deploy boilerplate example Next.js&nbsp;projects.
           </p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
@@ -111,7 +112,7 @@ function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-        </a>
+        </Link>
       </div>
     </main>
   )
@@ -143,7 +144,7 @@ export default Home = () => (
         </div>
         <div className='text-2xl p-1 ps-4 leading-10'>
           <p>
-            Untuk mengkuti SIAK WAR sebenarnya sangat sederhana, kita cukup menuju kehalaman pengisian IRS. Halaman ini bisa diakses setelah kita login ke SIAK-NG. Kemudian menuju ke tab IRS {`>`} Isi/Ubah IRS atau bisa langsung ke link <a href="https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit">ini</a> (pastikan sudah login terlebih dahulu). Jika waktu pengisian IRS sudah tiba, maka kita akan langsung bisa memilih kelas yang kita inginkan. Jika sudah selesai, maka kita hanya perlu menekan tombol "Simpan IRS" yang terdapat di bagian paling bawah halaman pengisian IRS. Setelah itu, maka kita akan melihat semua kelas yang sudah kita pilih. Mudah kan? :D. HAHAHAHAHA
+            Untuk mengkuti SIAK WAR sebenarnya sangat sederhana, kita cukup menuju kehalaman pengisian IRS. Halaman ini bisa diakses setelah kita login ke SIAK-NG. Kemudian menuju ke tab IRS {`>`} Isi/Ubah IRS atau bisa langsung ke link <Link href="https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit">ini</Link> (pastikan sudah login terlebih dahulu). Jika waktu pengisian IRS sudah tiba, maka kita akan langsung bisa memilih kelas yang kita inginkan. Jika sudah selesai, maka kita hanya perlu menekan tombol &quot;Simpan IRS&quot; yang terdapat di bagian paling bawah halaman pengisian IRS. Setelah itu, maka kita akan melihat semua kelas yang sudah kita pilih. Mudah kan? :D. HAHAHAHAHA
           </p>
           <p>
             Namun, semua itu hanya terjadi kalau hanya anda yang mengisi IRS di hari itu :D. Sejatinya, kita pasti akan melakukan pengisian IRS bersamaan dengan mahasiswa lainnya, terlebih jika kita menargetkan mendapatkan kelas yang kita inginkan, maka kita harus mengisi IRS diawal waktu ketika pengisian IRS sudah dibuka. Nah, untuk bisa menang pengsian IRS, perlu ada ritual khusus yang biasa dilakukan para Mahasiswa, secara khusus penulis sendiri :D, HAHAHAHAHA. Ritualnya kurang lebih adalah sebagai berikut:
@@ -155,7 +156,7 @@ export default Home = () => (
             </div>
             <div className='px-2 py-1'>
               <li>Mempersiapkan strategi yang matang</li>
-              <p>Salah satu strategi pengsian IRS adalah dengan melakukan riset terhadap kelas yang kita inginikan. Jadi sebelum hari-H pengsian IRS, pastikan kita sudah melihat semua jadwal kelas yang rencana akan kita ambil. Pastikan jadwal yang dipilih tidak bentrok dengan kelas lain (coba susun jadwal di website <a href='https://susunjadwal.cs.ui.ac.id/'>susunjadwal</a>). Silahkan buat beberapa plan untuk mengantisipasi jika ternyata kita gagal mendaptkan kelas yang kita inginkan. Jika kita mendapati salah satu kelas atau beberapa kelas yang kita pilih dimana kita berada urutan setelah kapasitas, jangan langsung memilih untuk mengganti kelas tersebut. Biasanya akan ada mahasiswa lain yang mengganti kelasnya atau extensi kapasitas kelas atau bisa juga pihak akademis fakultas mentolerir posisi tersebut. Namun kasus ini terjadi jika posisi kita tidak terlalu jauh dari kapasitas kelas, mungkin sekitar 10 posisi setelah kapasistas. Sisanya kita bisa mempertimbangkan untuk mengambil kelas lain.</p>
+              <p>Salah satu strategi pengsian IRS adalah dengan melakukan riset terhadap kelas yang kita inginikan. Jadi sebelum hari-H pengsian IRS, pastikan kita sudah melihat semua jadwal kelas yang rencana akan kita ambil. Pastikan jadwal yang dipilih tidak bentrok dengan kelas lain (coba susun jadwal di website <Link href='https://susunjadwal.cs.ui.ac.id/'>susunjadwal</Link>). Silahkan buat beberapa plan untuk mengantisipasi jika ternyata kita gagal mendaptkan kelas yang kita inginkan. Jika kita mendapati salah satu kelas atau beberapa kelas yang kita pilih dimana kita berada urutan setelah kapasitas, jangan langsung memilih untuk mengganti kelas tersebut. Biasanya akan ada mahasiswa lain yang mengganti kelasnya atau extensi kapasitas kelas atau bisa juga pihak akademis fakultas mentolerir posisi tersebut. Namun kasus ini terjadi jika posisi kita tidak terlalu jauh dari kapasitas kelas, mungkin sekitar 10 posisi setelah kapasistas. Sisanya kita bisa mempertimbangkan untuk mengambil kelas lain.</p>
             </div>
             <div className='px-2 py-1'>
               <li>Mempersiapkan semua resource yang dibutuhkan</li>
@@ -166,7 +167,7 @@ export default Home = () => (
               <p>Pastikan kita benar-benar siap sebelum pengisian IRS dimualai. Usahakan kita sudah persiapan minimal sekitar 30 menitan untuk menghindari hal-hal diluar perkiraan kita. </p>
             </div>
             <div className='px-2 py-1'>
-              <li>Jangan lupa berdo'a</li>
+              <li>Jangan lupa berdo{`'`}a</li>
               <p>Dari semua usaha yang kita sudah persiapkan, pastilah tidak ada yang bisa mengubah keputusan Tuhan. Jadi, jangan lupa untuk berdoa sebelum pengisian IRS dimulai, semoga Tuhan memberikan yang terbaik untuk kita.</p>
             </div>
           </ol>
@@ -195,7 +196,7 @@ export default Home = () => (
             </div>
             <div className='px-2 py-1'>
               <li>Coba refresh dulu sebelum login lagi</li>
-              <p>Terkadang ada beberapa request yang belum bisa tersampaikan ke server, biasanya akan muncul tampilan "request timeout" atau "lost connection". Jika hal ini terjadi, cobalah untuk melakukan refresh halaman terlebih dahulu sebelum melakukan login ulang. Jika session dan data sebelum terjadi peristiwa tersebut masih tersimpan di browser, maka kita bisa menghemat waktu tanpa perlu melakukan login ulang.</p>
+              <p>Terkadang ada beberapa request yang belum bisa tersampaikan ke server, biasanya akan muncul tampilan &quot;request timeout&quot; atau &quot;lost connection&quot;. Jika hal ini terjadi, cobalah untuk melakukan refresh halaman terlebih dahulu sebelum melakukan login ulang. Jika session dan data sebelum terjadi peristiwa tersebut masih tersimpan di browser, maka kita bisa menghemat waktu tanpa perlu melakukan login ulang.</p>
             </div>
             <div className='px-2 py-1'>
               <li>Simpan data login di browser</li>
@@ -215,7 +216,7 @@ export default Home = () => (
             </div>
             <div className='px-2 py-1'>
               <li>[HACK!!!] Gunakan script untuk mengisi IRS secara otomatis :D</li>
-              <p>Jika anda adalah seorang programmer, anda bisa membuat script automation untuk bisa melakukan pengisian IRS secara otomatis. Berdasarkan pengalaman dari penulis, posisi penempatan komponen pada halaman SIAK cukup mudah untuk mendapatkan polanya. Namun, anda setidaknya harus pernah minimal sekali mengikuti event SIAK-WAR agar bisa mengetahui keseluruhan alur yang terjadi. Setelah itu, anda bisa membuat semua jenis kemungkinan yang harus dilewati agar script yang anda buat bisa berjalan dengan baik. Jika anda tidak ada pengalaman dengan membuat script automation atau belum pernah mengikuti event SIAK-WAR, anda bisa menggunakan script yang sudah disediakan oleh penulis. Script ini dibuat dengan menggunakan bahasa pemrograman Python. Script ini bisa anda gunakan untuk mengisi IRS secara otomatis. Silahkan akses link <a href="/bot" className='hover:underline hover:text-blue-800'>berikut</a> untuk mendapatkan infromasi terkait script tersebut.</p>
+              <p>Jika anda adalah seorang programmer, anda bisa membuat script automation untuk bisa melakukan pengisian IRS secara otomatis. Berdasarkan pengalaman dari penulis, posisi penempatan komponen pada halaman SIAK cukup mudah untuk mendapatkan polanya. Namun, anda setidaknya harus pernah minimal sekali mengikuti event SIAK-WAR agar bisa mengetahui keseluruhan alur yang terjadi. Setelah itu, anda bisa membuat semua jenis kemungkinan yang harus dilewati agar script yang anda buat bisa berjalan dengan baik. Jika anda tidak ada pengalaman dengan membuat script automation atau belum pernah mengikuti event SIAK-WAR, anda bisa menggunakan script yang sudah disediakan oleh penulis. Script ini dibuat dengan menggunakan bahasa pemrograman Python. Script ini bisa anda gunakan untuk mengisi IRS secara otomatis. Silahkan akses link <Link href="/bot" className='hover:underline hover:text-blue-800'>berikut</Link> untuk mendapatkan infromasi terkait script tersebut.</p>
             </div>
           </ol>
         </div>

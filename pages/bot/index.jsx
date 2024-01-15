@@ -226,7 +226,7 @@ const BotIndex = () => (
                 <img src="/cd.png" alt="CD" />
               </li>
               <li>
-                Selain itu, Anda juga bisa langsung mengetikkan path direktori secara manual. Contoh: <code>cd "C:\Users\fulan\Documents\bot"</code>. Untuk bisa mendapatkan path direktori secara manual, Anda bisa membuka folder yang berisi script bot, arahkan mouse ke path direktori yang terdapat di atas folder tersebut, lalu klik pada kolom tersebut, maka secara otomatis akan langsung terpilih semua path direktori tersebut. Kemudian copy dan paste ke command prompt. Pastikan anda membungkus path tersebut dengan tanda kutip ( &quot; ). Cobalah untuk menggunakan salah satu dari kutip dua ( &quot; ) atau kutip satu ( &apos; ).
+                Selain itu, Anda juga bisa langsung mengetikkan path direktori secara manual. Contoh: <code>cd &quot;C:\Users\fulan\Documents\bot&quot;</code>. Untuk bisa mendapatkan path direktori secara manual, Anda bisa membuka folder yang berisi script bot, arahkan mouse ke path direktori yang terdapat di atas folder tersebut, lalu klik pada kolom tersebut, maka secara otomatis akan langsung terpilih semua path direktori tersebut. Kemudian copy dan paste ke command prompt. Pastikan anda membungkus path tersebut dengan tanda kutip ( &quot; ). Cobalah untuk menggunakan salah satu dari kutip dua ( &quot; ) atau kutip satu ( &apos; ).
                 <img src="/path-direktori-blocked.png" alt="Path Direktori Blocked" />
               </li>
             </ul>
