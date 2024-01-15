@@ -53,7 +53,7 @@ const Matkul = () => {
 
   const updateSelectedMatkulKelas = (tipe, matkul, kelasKey) => {
     const newMatkuls = [...selectedMatkul];
-    console.log(matkul, kelasKey);
+    // console.log(matkul, kelasKey);
     const matkulTipeIndex = newMatkuls.findIndex((mk) => mk.tipe === tipe);
     const matkulIndex = newMatkuls[matkulTipeIndex].matkuls.findIndex(
       (mk) => mk.kode === matkul.kode
@@ -106,7 +106,7 @@ const Matkul = () => {
     matkuls.forEach((mk) => {
       matkulsFlat = matkulsFlat.concat(mk);
     });
-    console.log(matkulsFlat);
+    // console.log(matkulsFlat);
     return matkulsFlat.join("\n");
   };
   const totalPilihan = (tipe) => {
