@@ -196,15 +196,15 @@ const Matkul = () => {
               onChange={(e) => setFilter(e.target.value)}
             ></input>
           </div>
-          {matkuls.map((matkul) => (
+          {matkuls.map((matkul, im) => (
             <div>
-              <div className="font-bold p-2">{matkul.tipe}</div>
+              <div className="font-bold p-2" key={im}>{matkul.tipe}</div>
               {matkul.matkuls
                 .filter((mk) =>
                   mk.nama.toLowerCase().includes(filter.toLowerCase())
                 )
-                .map((mk) => (
-                  <div className="border border-1 p-3 m-2">
+                .map((mk, imk) => (
+                  <div className="border border-1 p-3 m-2" key={imk} >
                     <div className="py-2">
                       <Checkbox
                         label={`${mk.kode} - ${mk.nama} (${mk.sks} SKS)`}
@@ -248,16 +248,16 @@ const Matkul = () => {
             />
           </div>
           <div className="p-1">
-            {selectedMatkul?.map((matkul) => (
-              <div className="font-bold">
+            {selectedMatkul?.map((matkul, im) => (
+              <div className="font-bold" key={im}>
                 <div>{`${matkul.tipe} (${totalPilihan(
                   matkul.tipe
                 )} dipilih)`}</div>
                 <div>
                   {matkul.matkuls
                     .filter((mk) => mk.added && mk.kelas)
-                    .map((mk) => (
-                      <div className="border p-2 m-2 rounded-sm font-semibold">
+                    .map((mk, imk) => (
+                      <div className="border p-2 m-2 rounded-sm font-semibold" key={imk}>
                         <div>{`${mk.kode} - ${mk.nama} (${mk.sks} SKS)`}</div>
                         <div>
                           <div>
@@ -265,16 +265,16 @@ const Matkul = () => {
                             <div>
                               <div>Dosen pengajar:</div>
                               <div>
-                                {mk.kelas?.dosen.map((dosen) => (
-                                  <div>{dosen}</div>
+                                {mk.kelas?.dosen.map((dosen, ids) => (
+                                  <div key={ids}>{dosen}</div>
                                 ))}
                               </div>
                             </div>
                             <div>
                               <div>Jadwal dan ruangan:</div>
                               <div>
-                                {mk.kelas?.jadwal.map((jadwal) => (
-                                  <div>{`- ${jadwal[0]}, ${jadwal[1]}`}</div>
+                                {mk.kelas?.jadwal.map((jadwal, ijd) => (
+                                  <div key={ijd}>{`- ${jadwal[0]}, ${jadwal[1]}`}</div>
                                 ))}
                               </div>
                             </div>
