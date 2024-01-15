@@ -197,8 +197,8 @@ const Matkul = () => {
             ></input>
           </div>
           {matkuls.map((matkul, im) => (
-            <div>
-              <div className="font-bold p-2" key={im}>{matkul.tipe}</div>
+            <div key={im}>
+              <div className="font-bold p-2">{matkul.tipe}</div>
               {matkul.matkuls
                 .filter((mk) =>
                   mk.nama.toLowerCase().includes(filter.toLowerCase())
