@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const BotIndex = () => (
   <main className="w-screen flex justify-center">
     <div className="w-4/5">
@@ -6,15 +8,15 @@ const BotIndex = () => (
       </div>
       <p className="text-2xl leading-10">
         Bot ini sejatinya bukan sepenuhnya buatan penulis, bahkan hampir sepenuhnya dibuat oleh{" "}
-        <a href="https://github.com/eaglescommander>" className="hover:text-blue-800 underline">eaglescommander</a>.
+        <Link href="https://github.com/eaglescommander" className="hover:text-blue-800 underline">eaglescommander</Link>.
         Penulis hanya merubah berapa bagian menyesuaikan dengan pembaruan modul{" "}
-        <a href="https://pypi.org/project/selenium/" className="hover:text-blue-800 underline">selenium</a>. Penulis juga merubah beberapa bagian untuk memudahkan penggunaan bot ini. Jika Anda ingin melihat kode asli dari bot ini, silahkan kunjungi{" "}
-        <a href="https://github.com/eaglescommander/SIAK-AXZ" className="hover:text-blue-800 underline">repositori</a>{" "} milik eaglescommander. Anda bisa langsung melakukan clone dari repositori tersebut, atau melakukan fork jika Anda ingin melakukan perubahan. Dokumentasi kode asli tersebut dapat dibaca pada file
+        <Link href="https://pypi.org/project/selenium/" className="hover:text-blue-800 underline">selenium</Link>. Penulis juga merubah beberapa bagian untuk memudahkan penggunaan bot ini. Jika Anda ingin melihat kode asli dari bot ini, silahkan kunjungi{" "}
+        <Link href="https://github.com/eaglescommander/SIAK-AXZ" className="hover:text-blue-800 underline">repositori</Link>{" "} milik eaglescommander. Anda bisa langsung melakukan clone dari repositori tersebut, atau melakukan fork jika Anda ingin melakukan perubahan. Dokumentasi kode asli tersebut dapat dibaca pada file
         README.md.
       </p>
       <p className="text-2xl leading-10">
         Untuk Bot yang sudah dimodifikasi oleh penulis, Anda bisa mendownloadnya di{" "}
-        <a href="/bot-scripts.zip" className="hover:text-blue-800 underline" >sini</a>.
+        <Link href="/bot-scripts.zip" className="hover:text-blue-800 underline" >sini</Link>.
       </p>
       <div className="text-2xl py-3 leading-10">
         <h1 id="penting-">PENTING!!!</h1>
@@ -50,7 +52,7 @@ const BotIndex = () => (
           </li>
           <li>
             Pastikan sudah menginstall Python di komputer Anda. Download{" "}
-            <a href="https://www.python.org/downloads/" className="hover:text-blue-800 underline" >di sini</a>. Pilih versi Python 3.x.x (disarankan versi terbaru atau versi 3.11 keatas).
+            <Link href="https://www.python.org/downloads/" className="hover:text-blue-800 underline" >di sini</Link>. Pilih versi Python 3.x.x (disarankan versi terbaru atau versi 3.11 keatas).
           </li>
           <li>
             Pastikan sudah menginstall semua library yang dibutuhkan. Buka terminal/command prompt, lalu ketikkan perintah berikut:
@@ -60,13 +62,13 @@ const BotIndex = () => (
           </li>
           <li>
             Pastikan sudah menginstall{" "}
-            <a href="https://www.google.com/chrome/" className="hover:text-blue-800 underline">Google Chrome</a>.
+            <Link href="https://www.google.com/chrome/" className="hover:text-blue-800 underline">Google Chrome</Link>.
           </li>
           <li>
             Pastikan sudah mendownload{" "}
-            <a href="https://chromedriver.chromium.org/downloads" className="hover:text-blue-800 underline">
+            <Link href="https://chromedriver.chromium.org/downloads" className="hover:text-blue-800 underline">
               ChromeDriver
-            </a> {" "}
+            </Link> {" "}
             dan memindahaknnya ke directory yang sama dengan script bot serta ubah namafilenya menjadi <code>chromedriver</code>. Pilih versi yang sesuai dengan versi Google Chrome yang Anda gunakan. Untuk mengetahui versi Google Chrome yang Anda gunakan, buka Google Chrome, lalu klik titik tiga di pojok kanan atas, lalu pilih <code>Help</code> &gt; <code>About Google Chrome</code>.
             <img
               src="/check-chrome-version.png"
@@ -75,7 +77,7 @@ const BotIndex = () => (
             />
           </li>
           <li>
-            Pastikan sudah mengisi file <code>credentials.txt</code> dan{" "} <code>matkuls.txt</code> dengan benar. Lihat penjelasan <a href="#penjelasan-file-credentials-txt-dan-matkuls-txt" className="hover:text-blue-800 underline">di bawah</a>.
+            Pastikan sudah mengisi file <code>credentials.txt</code> dan{" "} <code>matkuls.txt</code> dengan benar. Lihat penjelasan <Link href="#penjelasan-file-credentials-txt-dan-matkuls-txt" className="hover:text-blue-800 underline">di bawah</Link>.
           </li>
           <li>Pastikan kondisi jaringan internet Anda stabil.</li>
         </ol>
@@ -105,7 +107,7 @@ const BotIndex = () => (
         <p>Note: </p>
         <ul className="ps-6 list-disc">
           <li>
-            Jika Anda menjalankan script secara manual melalui terminal/command prompt, pastikan Anda berada di direktori yang tepat. Jika tidak, maka Anda akan mendapatkan error. Ikuti penjelasan <a href="#cara-buka-terminal-direktori" className="hover:text-blue-800 underline" >di bawah</a> jika anda belum familiar dengan command prompt
+            Jika Anda menjalankan script secara manual melalui terminal/command prompt, pastikan Anda berada di direktori yang tepat. Jika tidak, maka Anda akan mendapatkan error. Ikuti penjelasan <Link href="#cara-buka-terminal-direktori" className="hover:text-blue-800 underline" >di bawah</Link> jika anda belum familiar dengan command prompt
           </li>
           <li>
             Script <code>blitzkrieg.py</code> dan <code>bushido.py</code>{" "}memiliki algoritma yang berbeda. Silahkan jalankan kedua script untuk jaga-jaga, setidaknya ada satu script yang berhasil. Namun, sepengalaman penulis, script <code>bushido.py</code> yang lebih sering penulis gunakan. Untuk lebih jaga-jaga, boleh jalankan beberapa script yang sama secara bersamaan namun pastinya dengan terminal/command prompt yang berbeda.
@@ -173,13 +175,13 @@ const BotIndex = () => (
               </li>
               <li>
                 Kode mata kuliah bisa di dapatkan dengan mengakses jadwal kuliah yang terdapat di halaman SIAK-NG dengan mengkilk{" "} <code>Jadwal</code> &gt; <code>Jadwal Kuliah</code> kemudian silahkan sesuaikan dengan tahun ajaran dan semester kelas yang anda inginkan, atau bisa langusng dengan menuju link{" "}
-                <a href="https://academic.ui.ac.id/main/Schedule/Index">
+                <Link href="https://academic.ui.ac.id/main/Schedule/Index">
                   https://academic.ui.ac.id/main/Schedule/Index
-                </a>. Setelah itu silahkan klik mata kuliah yang ingin Anda ambil, lalu lihat pada URL, kode mata kuliah terdapat pada bagian akhir URL, setelah <code>cc=</code>. Contoh:{" "}
+                </Link>. Setelah itu silahkan klik mata kuliah yang ingin Anda ambil, lalu lihat pada URL, kode mata kuliah terdapat pada bagian akhir URL, setelah <code>cc=</code>. Contoh:{" "}
                 <code>
                   https://academic.ui.ac.id/main/CoursePlan/ClassInfo?cc=724681
                 </code>
-                , maka kode mata kuliahnya adalah <code>724681</code> untuk kelas <code>Aljabar Linier C</code>. Jika anda kesusahan dengan cara ini, anda bisa menuju ke link <a href="/matkul" className="hover:text-blue-800 underline">ini</a>. Penulis sudah membuatkan form untuk mengenerate matkuls.txt sesuai dengan kelas yang dipilih.
+                , maka kode mata kuliahnya adalah <code>724681</code> untuk kelas <code>Aljabar Linier C</code>. Jika anda kesusahan dengan cara ini, anda bisa menuju ke link <Link href="/matkul" className="hover:text-blue-800 underline">ini</Link>. Penulis sudah membuatkan form untuk mengenerate matkuls.txt sesuai dengan kelas yang dipilih.
               </li>
             </ul>
           </li>
@@ -188,7 +190,7 @@ const BotIndex = () => (
         <div>
           <div>
             <div>Cara 1: Langsung ke direktori</div>
-            <p>Cara ini berlaku untuk pengguna Windows 11 atau Windows 10 yang sudah menginstall <a href="https://apps.microsoft.com/detail/9N0DX20HK701?hl=id-ID&gl=US" className="hover:text-blue-800 underline">Windows Terminal</a>. Untuk pengguna windows 11 tidak perlu menginstall lagi Windows Terminal karena sudah merupakan aplikasi bawaan Windows 11</p>
+            <p>Cara ini berlaku untuk pengguna Windows 11 atau Windows 10 yang sudah menginstall <Link href="https://apps.microsoft.com/detail/9N0DX20HK701?hl=id-ID&gl=US" className="hover:text-blue-800 underline">Windows Terminal</Link>. Untuk pengguna windows 11 tidak perlu menginstall lagi Windows Terminal karena sudah merupakan aplikasi bawaan Windows 11</p>
             <ul className="ps-6 list-decimal">
               <li>
                 Buka folder yang berisi script bot, lalu klik kanan pada area kosong di dalam folder tersebut.
