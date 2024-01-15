@@ -64,13 +64,13 @@ const parseAllMatkul = (table) => {
         const dosen = innerHTML(tds[6]).split("<br />")
         matkulKelas = new MatkulKelas(kode, nama, matkul.sks, dosen, zip(jadwal, ruang))
       } else if (tds.length === 5) {
-        const jadwal = tds[3].textContent
+        const jadwal = innerHTML(tds[3]).split("<br />")
         const dosen = innerHTML(tds[4]).split("<br />")
-        matkulKelas = new MatkulKelas(kode, nama, matkul.sks, dosen, jadwal)
+        matkulKelas = new MatkulKelas(kode, nama, matkul.sks, dosen, zip(jadwal, ["-"]))
       } else {
-        const jadwal = tds[3].textContent
-        const dosen = "-"
-        matkulKelas = new MatkulKelas(kode, nama, matkul.sks, dosen, jadwal)
+        const jadwal = innerHTML(tds[3]).split("<br />")
+        const dosen = ["Tidak ada dosen"]
+        matkulKelas = new MatkulKelas(kode, nama, matkul.sks, dosen, zip(jadwal, ["-"]))
 
       }
       matkul.kelas.push(matkulKelas)
