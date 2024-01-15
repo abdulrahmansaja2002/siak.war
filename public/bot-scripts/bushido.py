@@ -24,7 +24,8 @@ title = """
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--ignore-ssl-errors')
-driver = webdriver.Chrome('./chromedriver', options=options)
+# driver = webdriver.Chrome('./chromedriver', options)
+driver = webdriver.Chrome(options=options)
 
 # # ======= linux. put chromedriver on folder
 # driver = webdriver.Chrome("./chromedriver")

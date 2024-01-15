@@ -21,7 +21,8 @@ def war(username, password):
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--ignore-ssl-errors')
-    driver = webdriver.Chrome('chromedriver.exe', options=options)
+    # driver = webdriver.Chrome('chromedriver.exe', options=options)
+    driver = webdriver.Chrome(options=options)
 
     # use line below if you want more refresh in shorter time, might impact login time
     # maybe useful when your faculty goes to war on the same time as other faculty
