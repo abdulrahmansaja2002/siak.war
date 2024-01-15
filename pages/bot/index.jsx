@@ -5,17 +5,11 @@ const BotIndex = () => (
         SIAK-WAR Bot
       </div>
       <p className="text-2xl leading-10">
-        Bot ini sejatinya bukan sepenuhnya buatan penulis, bahkan hampir
-        sepenuhnya dibuat oleh{" "}
+        Bot ini sejatinya bukan sepenuhnya buatan penulis, bahkan hampir sepenuhnya dibuat oleh{" "}
         <a href="https://github.com/eaglescommander>" className="hover:text-blue-800 underline">eaglescommander</a>.
         Penulis hanya merubah berapa bagian menyesuaikan dengan pembaruan modul{" "}
-        <a href="https://pypi.org/project/selenium/" className="hover:text-blue-800 underline">selenium</a>. Penulis juga
-        merubah beberapa bagian untuk memudahkan penggunaan bot ini. Jika Anda
-        ingin melihat kode asli dari bot ini, silahkan kunjungi{" "}
-        <a href="https://github.com/eaglescommander/SIAK-AXZ" className="hover:text-blue-800 underline">repositori</a>{" "}
-        milik eaglescommander. Anda bisa langsung melakukan clone dari
-        repositori tersebut, atau melakukan fork jika Anda ingin melakukan
-        perubahan. Dokumentasi kode asli tersebut dapat dibaca pada file
+        <a href="https://pypi.org/project/selenium/" className="hover:text-blue-800 underline">selenium</a>. Penulis juga merubah beberapa bagian untuk memudahkan penggunaan bot ini. Jika Anda ingin melihat kode asli dari bot ini, silahkan kunjungi{" "}
+        <a href="https://github.com/eaglescommander/SIAK-AXZ" className="hover:text-blue-800 underline">repositori</a>{" "} milik eaglescommander. Anda bisa langsung melakukan clone dari repositori tersebut, atau melakukan fork jika Anda ingin melakukan perubahan. Dokumentasi kode asli tersebut dapat dibaca pada file
         README.md.
       </p>
       <p className="text-2xl leading-10">
@@ -26,8 +20,7 @@ const BotIndex = () => (
         <h1 id="penting-">PENTING!!!</h1>
         <ol className="ps-6 list-disc">
           <li>
-            Pastikan semua file sudah lengkap, berikut susunan file yang harus
-            ada:
+            Pastikan semua file sudah lengkap, berikut susunan file yang harus ada:
             <ul className="list-decimal ps-6">
               <li>
                 <code>blitzkrieg.py</code>
@@ -57,18 +50,12 @@ const BotIndex = () => (
           </li>
           <li>
             Pastikan sudah menginstall Python di komputer Anda. Download{" "}
-            <a href="https://www.python.org/downloads/" className="hover:text-blue-800 underline" >di sini</a>. Pilih versi
-            Python 3.x.x (disarankan versi terbaru atau versi 3.11 keatas).
+            <a href="https://www.python.org/downloads/" className="hover:text-blue-800 underline" >di sini</a>. Pilih versi Python 3.x.x (disarankan versi terbaru atau versi 3.11 keatas).
           </li>
           <li>
-            Pastikan sudah menginstall semua library yang dibutuhkan. Buka
-            terminal/command prompt, lalu ketikkan perintah berikut:
+            Pastikan sudah menginstall semua library yang dibutuhkan. Buka terminal/command prompt, lalu ketikkan perintah berikut:
             <pre>
-              <code>
-                {" "}
-                pip <span class="hljs-keyword">install</span> -r
-                requirements.txt
-              </code>
+              <code>pip install -r requirements.txt</code>
             </pre>
           </li>
           <li>
@@ -80,10 +67,7 @@ const BotIndex = () => (
             <a href="https://chromedriver.chromium.org/downloads" className="hover:text-blue-800 underline">
               ChromeDriver
             </a> {" "}
-            dan memindahaknnya ke directory yang sama dengan script bot serta ubah namafilenya menjadi <code>chromedriver</code>. Pilih versi yang sesuai dengan versi Google Chrome yang Anda
-            gunakan. Untuk mengetahui versi Google Chrome yang Anda gunakan,
-            buka Google Chrome, lalu klik titik tiga di pojok kanan atas, lalu
-            pilih <code>Help</code> &gt; <code>About Google Chrome</code>.
+            dan memindahaknnya ke directory yang sama dengan script bot serta ubah namafilenya menjadi <code>chromedriver</code>. Pilih versi yang sesuai dengan versi Google Chrome yang Anda gunakan. Untuk mengetahui versi Google Chrome yang Anda gunakan, buka Google Chrome, lalu klik titik tiga di pojok kanan atas, lalu pilih <code>Help</code> &gt; <code>About Google Chrome</code>.
             <img
               src="/check-chrome-version.png"
               alt="Check Chrome Version"
@@ -91,65 +75,48 @@ const BotIndex = () => (
             />
           </li>
           <li>
-            Pastikan sudah mengisi file <code>credentials.txt</code> dan{" "}
-            <code>matkuls.txt</code> dengan benar. Lihat penjelasan di bawah.
+            Pastikan sudah mengisi file <code>credentials.txt</code> dan{" "} <code>matkuls.txt</code> dengan benar. Lihat penjelasan <a href="#penjelasan-file-credentials-txt-dan-matkuls-txt" className="hover:text-blue-800 underline">di bawah</a>.
           </li>
           <li>Pastikan kondisi jaringan internet Anda stabil.</li>
         </ol>
         <h2 id="cara-menjalankan">Cara Menjalankan</h2>
-        <ol>
+        <ol className="ps-6 list-decimal">
           <li>
-            Untuk menjalankan script <code>blitzkrieg.py</code>, bisa dengan
-            meg-klik 2x file blitzkrieg.py atau file blitzkrieg.run.bat (jika
-            ada), atau bisa juga secara manual melalui terminal/command prompt,
-            dengan menjalankan perintah berikut:
+            Untuk menjalankan script <code>blitzkrieg.py</code>, bisa dengan meg-klik 2x file blitzkrieg.py atau file blitzkrieg.run.bat (jika ada), atau bisa juga secara manual melalui terminal/command prompt, dengan menjalankan perintah berikut:
             <pre>
               <code>
                 {" "}
-                <span class="hljs-keyword">python</span> blitzkrieg.
-                <span class="hljs-keyword">py</span>
+                <span className="hljs-keyword">python</span> blitzkrieg.
+                <span className="hljs-keyword">py</span>
               </code>
             </pre>
           </li>
           <li>
-            Untuk menjalankan script <code>bushido.py</code>, bisa dengan
-            meg-klik 2x file bushido.py atau file bushido.run.bat (jika ada),
-            atau bisa juga secara manual melalui terminal/command prompt, dengan
-            menjalankan perintah berikut:
+            Untuk menjalankan script <code>bushido.py</code>, bisa dengan meg-klik 2x file bushido.py atau file bushido.run.bat (jika ada), atau bisa juga secara manual melalui terminal/command prompt, dengan menjalankan perintah berikut:
             <pre>
               <code>
                 {" "}
-                <span class="hljs-keyword">python</span> bushido.
-                <span class="hljs-keyword">py</span>
+                <span className="hljs-keyword">python</span> bushido.
+                <span className="hljs-keyword">py</span>
               </code>
             </pre>
           </li>
         </ol>
         <p>Note: </p>
-        <ul>
+        <ul className="ps-6 list-disc">
           <li>
-            Jika Anda menjalankan script secara manual melalui terminal/command
-            prompt, pastikan Anda berada di direktori yang tepat. Jika tidak,
-            maka Anda akan mendapatkan error.
+            Jika Anda menjalankan script secara manual melalui terminal/command prompt, pastikan Anda berada di direktori yang tepat. Jika tidak, maka Anda akan mendapatkan error. Ikuti penjelasan <a href="#cara-buka-terminal-direktori" className="hover:text-blue-800 underline" >di bawah</a> jika anda belum familiar dengan command prompt
           </li>
           <li>
-            script <code>blitzkrieg.py</code> dan <code>bushido.py</code>{" "}
-            memiliki algoritma yang berbeda. Silahkan jalankan kedua script
-            untuk jaga-jaga, setidaknya ada satu script yang berhasil. Namun,
-            sepengalaman penulis, script <code>bushido.py</code> yang lebih
-            sering penulis gunakan. Untuk lebih jaga-jaga, boleh jalankan
-            beberapa script yang sama secara bersamaan namun pastinya dengan
-            terminal/command prompt yang berbeda.
+            Script <code>blitzkrieg.py</code> dan <code>bushido.py</code>{" "}memiliki algoritma yang berbeda. Silahkan jalankan kedua script untuk jaga-jaga, setidaknya ada satu script yang berhasil. Namun, sepengalaman penulis, script <code>bushido.py</code> yang lebih sering penulis gunakan. Untuk lebih jaga-jaga, boleh jalankan beberapa script yang sama secara bersamaan namun pastinya dengan terminal/command prompt yang berbeda.
           </li>
         </ul>
-        <h3 id="penjelasan-file-credentials-txt-dan-matkuls-txt-">
-          Penjelasan file <code>credentials.txt</code> dan{" "}
-          <code>matkuls.txt</code>
+        <h3 id="penjelasan-file-credentials-txt-dan-matkuls-txt">
+          Penjelasan file <code>credentials.txt</code> dan{" "}<code>matkuls.txt</code>
         </h3>
-        <ul>
+        <ul className="ps-6 list-disc">
           <li>
-            <code>credentials.txt</code> berisi username dan password SIAK Anda.
-            Formatnya adalah sebagai berikut:
+            <code>credentials.txt</code> berisi username dan password SIAK Anda. Formatnya adalah sebagai berikut:
             <div className="border p-4 rounded-lg ">
               <div>
                 <code>username</code>
@@ -175,8 +142,7 @@ const BotIndex = () => (
             </div>
           </li>
           <li>
-            <code>matkuls.txt</code> berisi kode mata kuliah yang ingin Anda
-            ambil. Formatnya adalah sebagai berikut:
+            <code>matkuls.txt</code> berisi kode mata kuliah yang ingin Anda ambil. Formatnya adalah sebagai berikut:
             <div className="border p-4 rounded-lg ">
               <div>
                 <code>kode_matkul1-sks,nama_kelas_matkul1</code>
@@ -201,35 +167,70 @@ const BotIndex = () => (
               </div>
             </div>
             Note:
-            <ul>
+            <ul className="ps-6 list-disc">
               <li>
-                Kode mata kuliah dan SKS dipisahkan dengan tanda <code>-</code>{" "}
-                (strip).
+                Kode mata kuliah dan SKS dipisahkan dengan tanda <code>-</code>{" "}(strip).
               </li>
               <li>
-                Kode mata kuliah bisa di dapatkan dengan mengakses jadwal kuliah
-                yang terdapat di halaman SIAK-NG dengan mengkilk{" "}
-                <code>Jadwal</code> &gt; <code>Jadwal Kuliah</code> kemudian
-                silahkan sesuaikan dengan tahun ajaran dan semester kelas yang
-                anda inginkan, atau bisa langusng dengan menuju link{" "}
+                Kode mata kuliah bisa di dapatkan dengan mengakses jadwal kuliah yang terdapat di halaman SIAK-NG dengan mengkilk{" "} <code>Jadwal</code> &gt; <code>Jadwal Kuliah</code> kemudian silahkan sesuaikan dengan tahun ajaran dan semester kelas yang anda inginkan, atau bisa langusng dengan menuju link{" "}
                 <a href="https://academic.ui.ac.id/main/Schedule/Index">
                   https://academic.ui.ac.id/main/Schedule/Index
-                </a>
-                . Setelah itu silahkan klik mata kuliah yang ingin Anda ambil,
-                lalu lihat pada URL, kode mata kuliah terdapat pada bagian akhir
-                URL, setelah <code>cc=</code>. Contoh:{" "}
+                </a>. Setelah itu silahkan klik mata kuliah yang ingin Anda ambil, lalu lihat pada URL, kode mata kuliah terdapat pada bagian akhir URL, setelah <code>cc=</code>. Contoh:{" "}
                 <code>
                   https://academic.ui.ac.id/main/CoursePlan/ClassInfo?cc=724681
                 </code>
-                , maka kode mata kuliahnya adalah <code>724681</code> untuk
-                kelas <code>Aljabar Linier C</code>. Jika anda kesusahan dengan
-                cara ini, anda bisa menuju ke link <a href="/matkul" className="hover:text-blue-800 underline">ini</a>. Penulis
-                sudah membuatkan form untuk mengenerate matkuls.txt sesuai
-                dengan kelas yang dipilih.
+                , maka kode mata kuliahnya adalah <code>724681</code> untuk kelas <code>Aljabar Linier C</code>. Jika anda kesusahan dengan cara ini, anda bisa menuju ke link <a href="/matkul" className="hover:text-blue-800 underline">ini</a>. Penulis sudah membuatkan form untuk mengenerate matkuls.txt sesuai dengan kelas yang dipilih.
               </li>
             </ul>
           </li>
         </ul>
+        <h3 id="cara-buka-terminal-direktori">Cara membuka terminal/command prompt pada direktori yang kita inginkan (windows)</h3>
+        <div>
+          <div>
+            <div>Cara 1: Langsung ke direktori</div>
+            <p>Cara ini berlaku untuk pengguna Windows 11 atau Windows 10 yang sudah menginstall <a href="https://apps.microsoft.com/detail/9N0DX20HK701?hl=id-ID&gl=US" className="hover:text-blue-800 underline">Windows Terminal</a>. Untuk pengguna windows 11 tidak perlu menginstall lagi Windows Terminal karena sudah merupakan aplikasi bawaan Windows 11</p>
+            <ul className="ps-6 list-decimal">
+              <li>
+                Buka folder yang berisi script bot, lalu klik kanan pada area kosong di dalam folder tersebut.
+              </li>
+              <li>
+                Pilih <code>Open in Terminal</code> atau <code>Open in Command Prompt</code>.
+                <img src="/open-in-terminal.png" alt="Open in Terminal" />
+              </li>
+            </ul>
+          </div>
+          <div>
+          <div>Cara 2: Mengubah path direktori</div>
+          <p>Cara ini bisa dilakukan untuk semua versi Windows</p>
+          <ul className="ps-6 list-decimal">
+            <li>
+              Buka folder yang berisi script bot, lalu arahkan mouse ke path direktori yang terdapat di atas folder tersebut.
+              <img src="/path-direktori.png" alt="Path Direktori" />
+            </li>
+            <li>
+              Klik pada kolom tersebut, maka secara otomatis akan langsung terpilih semua path direktori tersebut. Kemudian ketikkan <code>cmd</code> lalu tekan enter. Maka akan langsung terbuka command prompt pada direktori tersebut.
+              <img src="/cmd.png" alt="CMD" />
+            </li>
+          </ul>
+          </div>
+          <div>
+            <div>
+              Cara 3: Mengubah path direktori dengan command <code>cd</code> (change directory) pada command prompt
+            </div>
+            <p>Cara ini bisa dilakukan untuk semua versi Windows</p>
+            <ul className="ps-6 list-decimal">
+              <li>
+                Buka command prompt, lalu ketikkan <code>cd</code> (change directory) lalu spasi, lalu drag folder yang berisi script bot ke command prompt, lalu tekan enter.
+                <img src="/cd.png" alt="CD" />
+              </li>
+              <li>
+                Selain itu, Anda juga bisa langsung mengetikkan path direktori secara manual. Contoh: <code>cd "C:\Users\fulan\Documents\bot"</code>. Untuk bisa mendapatkan path direktori secara manual, Anda bisa membuka folder yang berisi script bot, arahkan mouse ke path direktori yang terdapat di atas folder tersebut, lalu klik pada kolom tersebut, maka secara otomatis akan langsung terpilih semua path direktori tersebut. Kemudian copy dan paste ke command prompt. Pastikan anda membungkus path tersebut dengan tanda kutip ("). Cobalah untuk menggunakan salah satu dari kutip dua (") atau kutip satu (').
+                <img src="/path-direktori-blocked.png" alt="Path Direktori Blocked" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        
       </div>
     </div>
   </main>
