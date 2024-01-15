@@ -91,6 +91,9 @@ def is_bisa_ngisi():
 def is_war_success():
     return is_bisa_ngisi() or "IRS berhasil tersimpan!" in driver.page_source
 
+def is_login_success():
+    return display_name in driver.page_source or "Logout Counter" in driver.page_source 
+
 def war_page():
     #driver.get(siak_url)
     #time.sleep(2)
@@ -122,7 +125,7 @@ if __name__ == "__main__":
     while(True):
 
         # refresh manual bre
-        while(display_name not in driver.page_source and 
+        while(is_login_success() and 
               "Magister Kriminologi" not in driver.page_source):
             driver.refresh()
             

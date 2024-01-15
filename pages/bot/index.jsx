@@ -118,7 +118,7 @@ const BotIndex = () => (
         </h3>
         <ul className="ps-6 list-disc">
           <li>
-            <code>credentials.txt</code> berisi username dan password SIAK Anda. Formatnya adalah sebagai berikut:
+            <code>credentials.txt</code> berisi username dan password SIAK Anda, serta Display Name SIAK anda (biasanya terdapat di pojok kanan atas home SIAK). Formatnya adalah sebagai berikut:
             <div className="border p-4 rounded-lg ">
               <div>
                 <code>username</code>
@@ -140,6 +140,7 @@ const BotIndex = () => (
               </div>
               <div>
                 <code>Fulan bin Fulan</code>
+                <img src="siak-display-name.png" alt="SIAK Display Name" />
               </div>
             </div>
           </li>
