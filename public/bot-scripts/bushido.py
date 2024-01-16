@@ -125,7 +125,7 @@ if __name__ == "__main__":
     while(True):
 
         # refresh manual bre
-        while(is_login_success() and 
+        while(not is_login_success() and 
               "Magister Kriminologi" not in driver.page_source):
             driver.refresh()
             
